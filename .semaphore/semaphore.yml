@@ -48,4 +48,4 @@ blocks:
         - name: Build
           commands:
             - go build -v -o go-gin-app.exe
-            - artifact push project --force go-gin-app
+            - artifact push project --force go-gin-app.exe
