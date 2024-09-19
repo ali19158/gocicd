@@ -5,10 +5,10 @@ agent:
     type: f1-standard-2
     os_image: ubuntu2204
 blocks:
-  - name: Test
+  - name: Install dependencies
     task:
       jobs:
-        - name: go test
+        - name: install
           commands:
             - sem-version go 1.18
             - export GO111MODULE=on
